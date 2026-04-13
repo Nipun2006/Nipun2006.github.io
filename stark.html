@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S. // AEROSPACE DIV</title>
+    <link rel="icon" type="image/png" href="parrot.png">
+    <link rel="stylesheet" href="stark.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <div class="hud-wrapper">
+        <header class="hud-header">
+            <div class="system-status">
+                <span class="pulse"></span> SYSTEM: ONLINE // AUTH: N. KAPOOR
+            </div>
+            <h1>AEROSPACE_DIVISION</h1>
+            <p>"Wanna be the next Iron Man?"</p>
+            <a href="index.html" class="back-btn">[ ENCRYPT & RETURN ]</a>
+        </header>
+
+        <main class="database-grid">
+            
+            <div class="data-card">
+                <div class="card-corner top-left"></div>
+                <div class="card-corner bottom-right"></div>
+                <h3>// HARDWARE_PROTOTYPE_01</h3>
+                <div class="image-container">
+                    <img src="your-drone-pic.jpg" alt="Drone Hardware" class="holo-img">
+                </div>
+                <p>Heavy-Lift STOL UAV chassis integration. Carbon fiber mounts secured.</p>
+            </div>
+
+            <div class="data-card code-card">
+                <div class="card-corner top-left"></div>
+                <div class="card-corner bottom-right"></div>
+                <h3>// FLIGHT_CONTROLLER_LOGIC</h3>
+                <div class="terminal-window">
+<pre><code>void calculate_PID() {
+  error = setpoint - measured;
+  integral += error * dt;
+  derivative = (error - prev_error) / dt;
+  
+  // Custom thrust vectoring gains
+  output = (Kp*error) + (Ki*integral) + (Kd*derivative);
+  apply_to_motors(output);
+}</code></pre>
+                </div>
+                <a href="#" class="doc-link">DOWNLOAD FULL SCHEMATIC .PDF</a>
+            </div>
+
+            </main>
+    </div>
+</body>
+</html>
